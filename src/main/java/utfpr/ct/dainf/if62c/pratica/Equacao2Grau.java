@@ -57,7 +57,7 @@ public class Equacao2Grau <T extends Number> {
         if(delta < 0)
             throw new RuntimeException("Equação não tem solução real");
         
-        double resultado = Math.sqrt(delta)-b.doubleValue()/(2*a.doubleValue());
+        double resultado = (Math.sqrt(delta)-b.doubleValue())/(2*a.doubleValue());
         
         return resultado;
     }
@@ -67,7 +67,7 @@ public class Equacao2Grau <T extends Number> {
         if(delta < 0)
             throw new RuntimeException("Equação não tem solução real");
         
-        double sol = (Math.sqrt(delta)*-1)-b.doubleValue()/(2*a.doubleValue());
+        double sol = ((Math.sqrt(delta)*-1)-b.doubleValue())/(2*a.doubleValue());
         
         return sol;
     }
